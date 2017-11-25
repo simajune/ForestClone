@@ -18,6 +18,7 @@
 		230D34AF1FC9ABCF00A45525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D34AE1FC9ABCF00A45525 /* Main.storyboard */; };
 		230D34B11FC9AC7A00A45525 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34B01FC9AC7A00A45525 /* MainViewController.swift */; };
 		230D34B31FC9AC8800A45525 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34B21FC9AC8800A45525 /* SettingsViewController.swift */; };
+		230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */; };
 		516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15462032659811795F13846D /* Pods_ForestClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		230D34AE1FC9ABCF00A45525 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		230D34B01FC9AC7A00A45525 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		230D34B21FC9AC8800A45525 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C4AF19BB4476295CF315F01 /* Pods-ForestClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.release.xcconfig"; sourceTree = "<group>"; };
 		8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 				230D349C1FC9A50600A45525 /* LaunchScreen.storyboard */,
 				230D349A1FC9A50600A45525 /* Assets.xcassets */,
 				230D349F1FC9A50600A45525 /* Info.plist */,
+				230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */,
 				230D34911FC9A50600A45525 /* Products */,
 				E44671D49E8EBCAE06DF6DAF /* Pods */,
 				834BBB1ED9BC0D0A208016FA /* Frameworks */,
@@ -197,6 +200,7 @@
 				230D349E1FC9A50600A45525 /* LaunchScreen.storyboard in Resources */,
 				230D349B1FC9A50600A45525 /* Assets.xcassets in Resources */,
 				230D34991FC9A50600A45525 /* Main.storyboard in Resources */,
+				230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

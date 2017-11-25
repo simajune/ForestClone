@@ -17,7 +17,46 @@
                     <view key="view" contentMode="scaleToFill" id="Um5-5F-uUQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="skm-2a-bcU">
+                                <rect key="frame" x="37.5" y="208.5" width="300" height="250"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pj-OU-7Zy">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="51.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="NickName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4E3-nD-sjA">
+                                        <rect key="frame" x="0.0" y="66.5" width="300" height="51"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Vv-8Y-eKM">
+                                        <rect key="frame" x="0.0" y="132.5" width="300" height="51.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hid-hh-6nB">
+                                        <rect key="frame" x="0.0" y="199" width="300" height="51"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="d0k-hL-ECy"/>
+                                    <constraint firstAttribute="width" constant="300" id="lFP-1b-i5J"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="skm-2a-bcU" firstAttribute="centerX" secondItem="Um5-5F-uUQ" secondAttribute="centerX" id="dOD-JB-gU6"/>
+                            <constraint firstItem="skm-2a-bcU" firstAttribute="centerY" secondItem="Um5-5F-uUQ" secondAttribute="centerY" id="frh-NP-TxM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MAx-6c-pFu"/>
                     </view>
                 </viewController>

@@ -20,8 +20,7 @@
 		230D34B31FC9AC8800A45525 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34B21FC9AC8800A45525 /* SettingsViewController.swift */; };
 		230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */; };
 		516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15462032659811795F13846D /* Pods_ForestClone.framework */; };
-		CE0E44BC1FC9D30100ADB58E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E44BB1FC9D30100ADB58E /* Extension.swift */; };
-		CE0E44BF1FC9D52200ADB58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0E44BE1FC9D52200ADB58E /* Assets.xcassets */; };
+		CE0E44BC1FC9D30100ADB58E /* Login+SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,7 @@
 		230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C4AF19BB4476295CF315F01 /* Pods-ForestClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.release.xcconfig"; sourceTree = "<group>"; };
 		8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.debug.xcconfig"; sourceTree = "<group>"; };
-		CE0E44BB1FC9D30100ADB58E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+SignUpView.swift"; sourceTree = "<group>"; };
 		CE0E44BE1FC9D52200ADB58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +68,7 @@
 				230D34911FC9A50600A45525 /* Products */,
 				E44671D49E8EBCAE06DF6DAF /* Pods */,
 				834BBB1ED9BC0D0A208016FA /* Frameworks */,
+				CE5F61281FC9E361009E0E73 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +103,8 @@
 		230D34A61FC9A95C00A45525 /* SY */ = {
 			isa = PBXGroup;
 			children = (
-				230D34A81FC9AAA000A45525 /* Login.storyboard */,
-				230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */,
-				CE0E44BB1FC9D30100ADB58E /* Extension.swift */,
-				230D34AC1FC9AABC00A45525 /* SignupViewController.swift */,
 				230D34B21FC9AC8800A45525 /* SettingsViewController.swift */,
+				CE8191E31FC9F94700EA9D84 /* LoginAndSignUp */,
 			);
 			path = SY;
 			sourceTree = "<group>";
@@ -127,6 +124,49 @@
 				15462032659811795F13846D /* Pods_ForestClone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE5F61281FC9E361009E0E73 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				230D349A1FC9A50600A45525 /* Assets.xcassets */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		CE8191E31FC9F94700EA9D84 /* LoginAndSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CE8191E61FC9F96700EA9D84 /* VC */,
+				CE8191E51FC9F96300EA9D84 /* Layout */,
+				CE8191E41FC9F95800EA9D84 /* View */,
+			);
+			path = LoginAndSignUp;
+			sourceTree = "<group>";
+		};
+		CE8191E41FC9F95800EA9D84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				230D34A81FC9AAA000A45525 /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE8191E51FC9F96300EA9D84 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		CE8191E61FC9F96700EA9D84 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				230D34AC1FC9AABC00A45525 /* SignupViewController.swift */,
+				230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		E44671D49E8EBCAE06DF6DAF /* Pods */ = {
@@ -282,7 +322,7 @@
 			files = (
 				230D34AB1FC9AAAD00A45525 /* LoginViewController.swift in Sources */,
 				230D34961FC9A50600A45525 /* SplashViewController.swift in Sources */,
-				CE0E44BC1FC9D30100ADB58E /* Extension.swift in Sources */,
+				CE0E44BC1FC9D30100ADB58E /* Login+SignUpView.swift in Sources */,
 				230D34AD1FC9AABC00A45525 /* SignupViewController.swift in Sources */,
 				230D34941FC9A50600A45525 /* AppDelegate.swift in Sources */,
 				230D34B11FC9AC7A00A45525 /* MainViewController.swift in Sources */,

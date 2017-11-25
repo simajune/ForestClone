@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="s68-p7-GOs">
             <objects>
-                <viewController id="toO-Jc-9iw" customClass="LoginViewController" customModule="ForestClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="toO-Jc-9iw" customClass="SignupViewController" customModule="ForestClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l0d-Ab-BAh" customClass="LoginAndSignUpView" customModule="ForestClone" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,12 +109,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WR-rD-k2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84" y="97"/>
+            <point key="canvasLocation" x="66" y="96"/>
         </scene>
-        <!--View Controller-->
+        <!--Main-->
+        <scene sceneID="K2u-HT-1YE">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" id="IJ7-DP-YPt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cf7-GT-J5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="693"/>
+        </scene>
+        <!--Login View Controller-->
         <scene sceneID="Eqd-1D-zc9">
             <objects>
-                <viewController id="8bp-nP-i4x" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginStoryBoard" id="8bp-nP-i4x" customClass="LoginViewController" customModule="ForestClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dZF-A7-775" customClass="LoginAndSignUpView" customModule="ForestClone" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,13 +140,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="57.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYR-R7-ycV">
                                                         <rect key="frame" x="0.0" y="72.5" width="300" height="57.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -155,6 +163,10 @@
                                                         <state key="normal" title="로그인">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginButton:" destination="8bp-nP-i4x" eventType="touchUpInside" id="sAA-lP-692"/>
+                                                            <segue destination="IJ7-DP-YPt" kind="show" identifier="segueLoginToMain" id="JxE-5q-7QG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-XL-1ZA">
                                                         <rect key="frame" x="0.0" y="59.5" width="300" height="44.5"/>
@@ -162,6 +174,10 @@
                                                         <state key="normal" title="회원가입">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signUpButton:" destination="8bp-nP-i4x" eventType="touchUpInside" id="fjX-ve-X48"/>
+                                                            <segue destination="toO-Jc-9iw" kind="show" identifier="segueLoginToSignUp" id="X7Q-sP-j1v"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -202,10 +218,14 @@
                             <outlet property="signUpBtn" destination="PjD-XL-1ZA" id="s1Z-bh-TQg"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="aiL-vb-904" id="cz8-30-aSK"/>
+                        <outlet property="pwdTF" destination="RYR-R7-ycV" id="qXO-I0-TmK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3q-m5-DD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="97"/>
+            <point key="canvasLocation" x="-849" y="97"/>
         </scene>
     </scenes>
 </document>

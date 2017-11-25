@@ -21,6 +21,8 @@
 		230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */; };
 		516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15462032659811795F13846D /* Pods_ForestClone.framework */; };
 		CE0E44BC1FC9D30100ADB58E /* Login+SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */; };
+		CE8191E91FC9FA6900EA9D84 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8191E81FC9FA6900EA9D84 /* Extension.swift */; };
+		CE8191EC1FC9FADA00EA9D84 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8191EB1FC9FADA00EA9D84 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+SignUpView.swift"; sourceTree = "<group>"; };
 		CE0E44BE1FC9D52200ADB58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8191E81FC9FA6900EA9D84 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CE8191EB1FC9FADA00EA9D84 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		230D34A61FC9A95C00A45525 /* SY */ = {
 			isa = PBXGroup;
 			children = (
+				CE8191E71FC9FA5100EA9D84 /* Extension */,
 				230D34B21FC9AC8800A45525 /* SettingsViewController.swift */,
 				CE8191E31FC9F94700EA9D84 /* LoginAndSignUp */,
 			);
@@ -137,6 +142,7 @@
 		CE8191E31FC9F94700EA9D84 /* LoginAndSignUp */ = {
 			isa = PBXGroup;
 			children = (
+				CE8191EA1FC9FAC500EA9D84 /* Model */,
 				CE8191E61FC9F96700EA9D84 /* VC */,
 				CE8191E51FC9F96300EA9D84 /* Layout */,
 				CE8191E41FC9F95800EA9D84 /* View */,
@@ -167,6 +173,22 @@
 				230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		CE8191E71FC9FA5100EA9D84 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE8191E81FC9FA6900EA9D84 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE8191EA1FC9FAC500EA9D84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8191EB1FC9FADA00EA9D84 /* Users.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E44671D49E8EBCAE06DF6DAF /* Pods */ = {
@@ -321,12 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				230D34AB1FC9AAAD00A45525 /* LoginViewController.swift in Sources */,
+				CE8191EC1FC9FADA00EA9D84 /* Users.swift in Sources */,
 				230D34961FC9A50600A45525 /* SplashViewController.swift in Sources */,
 				CE0E44BC1FC9D30100ADB58E /* Login+SignUpView.swift in Sources */,
 				230D34AD1FC9AABC00A45525 /* SignupViewController.swift in Sources */,
 				230D34941FC9A50600A45525 /* AppDelegate.swift in Sources */,
 				230D34B11FC9AC7A00A45525 /* MainViewController.swift in Sources */,
 				230D34B31FC9AC8800A45525 /* SettingsViewController.swift in Sources */,
+				CE8191E91FC9FA6900EA9D84 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

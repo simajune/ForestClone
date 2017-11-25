@@ -5,7 +5,8 @@
 import UIKit
 
 class LoginAndSignUpView: UIView {
-    // MARK: 버튼
+   
+     // MARK: 버튼
     @IBOutlet weak var signUpBtn: UIButton? // 회원가입페이지로 넘어가는 버튼
     @IBOutlet weak var logInBtn: UIButton? // 로그인 버튼
     @IBOutlet weak var newMemberBtn: UIButton? // 회원가입등록버튼

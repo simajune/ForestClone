@@ -49,7 +49,7 @@
         <!--Main-->
         <scene sceneID="3ha-Ff-bjS">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="RN6-Qb-jXe" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" id="RN6-Qb-jXe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBL-gu-VcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1118" y="163"/>

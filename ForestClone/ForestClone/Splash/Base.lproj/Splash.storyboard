@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,32 +14,48 @@
         <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="ForestClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashStroyBoard" id="BYZ-38-t0r" customClass="SplashViewController" customModule="ForestClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="51y-nQ-gIT">
+                                <rect key="frame" x="12.5" y="158.5" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="qkM-PI-caD"/>
+                                    <constraint firstAttribute="width" secondItem="51y-nQ-gIT" secondAttribute="height" multiplier="1:1" id="zWf-Be-Yzf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="51y-nQ-gIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="G8L-ig-2LY"/>
+                            <constraint firstItem="51y-nQ-gIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ty7-Lo-RGp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Login-->
         <scene sceneID="JcZ-jd-3nM">
             <objects>
-                <viewControllerPlaceholder id="A5p-7x-eZo" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="LoginStoryBoard" storyboardName="Login" id="A5p-7x-eZo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ord-9A-SKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-99"/>
+            <point key="canvasLocation" x="1121" y="-92"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Main-->
         <scene sceneID="3ha-Ff-bjS">
             <objects>
-                <viewControllerPlaceholder id="RN6-Qb-jXe" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="RN6-Qb-jXe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBL-gu-VcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="69"/>
+            <point key="canvasLocation" x="1118" y="163"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="forest" width="640" height="336"/>
+    </resources>
 </document>

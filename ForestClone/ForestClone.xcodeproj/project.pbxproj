@@ -10,10 +10,7 @@
 		230D34941FC9A50600A45525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34931FC9A50600A45525 /* AppDelegate.swift */; };
 		230D34961FC9A50600A45525 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34951FC9A50600A45525 /* SplashViewController.swift */; };
 		230D34991FC9A50600A45525 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D34971FC9A50600A45525 /* Splash.storyboard */; };
-<<<<<<< HEAD
-=======
 		230D349B1FC9A50600A45525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230D349A1FC9A50600A45525 /* Assets.xcassets */; };
->>>>>>> ec38548a447089c517bf45a5d690f79c8b04906a
 		230D349E1FC9A50600A45525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D349C1FC9A50600A45525 /* LaunchScreen.storyboard */; };
 		230D34A91FC9AAA000A45525 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D34A81FC9AAA000A45525 /* Login.storyboard */; };
 		230D34AB1FC9AAAD00A45525 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */; };
@@ -33,10 +30,7 @@
 		230D34931FC9A50600A45525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		230D34951FC9A50600A45525 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		230D34981FC9A50600A45525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		230D349A1FC9A50600A45525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
->>>>>>> ec38548a447089c517bf45a5d690f79c8b04906a
 		230D349D1FC9A50600A45525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		230D349F1FC9A50600A45525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		230D34A81FC9AAA000A45525 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -209,13 +203,8 @@
 				230D34A91FC9AAA000A45525 /* Login.storyboard in Resources */,
 				230D34AF1FC9ABCF00A45525 /* Main.storyboard in Resources */,
 				230D349E1FC9A50600A45525 /* LaunchScreen.storyboard in Resources */,
-<<<<<<< HEAD
-				230D34991FC9A50600A45525 /* Splash.storyboard in Resources */,
-				CE0E44BF1FC9D52200ADB58E /* Assets.xcassets in Resources */,
-=======
 				230D349B1FC9A50600A45525 /* Assets.xcassets in Resources */,
 				230D34991FC9A50600A45525 /* Splash.storyboard in Resources */,
->>>>>>> ec38548a447089c517bf45a5d690f79c8b04906a
 				230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

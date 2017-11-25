@@ -21,7 +21,6 @@
 		230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */; };
 		516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15462032659811795F13846D /* Pods_ForestClone.framework */; };
 		CE0E44BC1FC9D30100ADB58E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E44BB1FC9D30100ADB58E /* Extension.swift */; };
-		CE0E44BF1FC9D52200ADB58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0E44BE1FC9D52200ADB58E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +68,7 @@
 				230D34911FC9A50600A45525 /* Products */,
 				E44671D49E8EBCAE06DF6DAF /* Pods */,
 				834BBB1ED9BC0D0A208016FA /* Frameworks */,
+				23869A311FC9E2240058FF7F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +119,14 @@
 				230D34B01FC9AC7A00A45525 /* MainViewController.swift */,
 			);
 			path = TJ;
+			sourceTree = "<group>";
+		};
+		23869A311FC9E2240058FF7F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				230D349A1FC9A50600A45525 /* Assets.xcassets */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		834BBB1ED9BC0D0A208016FA /* Frameworks */ = {
@@ -430,7 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForestClone.ForestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -445,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForestClone.ForestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

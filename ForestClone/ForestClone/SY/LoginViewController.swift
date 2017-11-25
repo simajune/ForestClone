@@ -1,6 +1,6 @@
 
 import UIKit
-
+import Firebase
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -9,3 +9,4 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 }
+

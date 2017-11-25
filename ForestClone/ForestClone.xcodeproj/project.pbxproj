@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		230D34941FC9A50600A45525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34931FC9A50600A45525 /* AppDelegate.swift */; };
-		230D34961FC9A50600A45525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34951FC9A50600A45525 /* ViewController.swift */; };
+		230D34961FC9A50600A45525 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34951FC9A50600A45525 /* SplashViewController.swift */; };
 		230D34991FC9A50600A45525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D34971FC9A50600A45525 /* Main.storyboard */; };
 		230D349B1FC9A50600A45525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230D349A1FC9A50600A45525 /* Assets.xcassets */; };
 		230D349E1FC9A50600A45525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D349C1FC9A50600A45525 /* LaunchScreen.storyboard */; };
+		230D34A91FC9AAA000A45525 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D34A81FC9AAA000A45525 /* Login.storyboard */; };
+		230D34AB1FC9AAAD00A45525 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */; };
+		230D34AD1FC9AABC00A45525 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34AC1FC9AABC00A45525 /* SignupViewController.swift */; };
+		230D34AF1FC9ABCF00A45525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D34AE1FC9ABCF00A45525 /* Main.storyboard */; };
+		230D34B11FC9AC7A00A45525 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34B01FC9AC7A00A45525 /* MainViewController.swift */; };
+		230D34B31FC9AC8800A45525 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34B21FC9AC8800A45525 /* SettingsViewController.swift */; };
+		516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15462032659811795F13846D /* Pods_ForestClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15462032659811795F13846D /* Pods_ForestClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForestClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		230D34901FC9A50600A45525 /* ForestClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForestClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		230D34931FC9A50600A45525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		230D34951FC9A50600A45525 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		230D34951FC9A50600A45525 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		230D34981FC9A50600A45525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		230D349A1FC9A50600A45525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		230D349D1FC9A50600A45525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		230D349F1FC9A50600A45525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230D34A81FC9AAA000A45525 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		230D34AC1FC9AABC00A45525 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		230D34AE1FC9ABCF00A45525 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		230D34B01FC9AC7A00A45525 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		230D34B21FC9AC8800A45525 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3C4AF19BB4476295CF315F01 /* Pods-ForestClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.release.xcconfig"; sourceTree = "<group>"; };
+		8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +56,12 @@
 			isa = PBXGroup;
 			children = (
 				230D34921FC9A50600A45525 /* ForestClone */,
+				230D349C1FC9A50600A45525 /* LaunchScreen.storyboard */,
+				230D349A1FC9A50600A45525 /* Assets.xcassets */,
+				230D349F1FC9A50600A45525 /* Info.plist */,
 				230D34911FC9A50600A45525 /* Products */,
+				E44671D49E8EBCAE06DF6DAF /* Pods */,
+				834BBB1ED9BC0D0A208016FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +77,57 @@
 			isa = PBXGroup;
 			children = (
 				230D34931FC9A50600A45525 /* AppDelegate.swift */,
-				230D34951FC9A50600A45525 /* ViewController.swift */,
-				230D34971FC9A50600A45525 /* Main.storyboard */,
-				230D349A1FC9A50600A45525 /* Assets.xcassets */,
-				230D349C1FC9A50600A45525 /* LaunchScreen.storyboard */,
-				230D349F1FC9A50600A45525 /* Info.plist */,
+				230D34A51FC9A94600A45525 /* Splash */,
+				230D34A71FC9A96700A45525 /* TJ */,
+				230D34A61FC9A95C00A45525 /* SY */,
 			);
 			path = ForestClone;
+			sourceTree = "<group>";
+		};
+		230D34A51FC9A94600A45525 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				230D34951FC9A50600A45525 /* SplashViewController.swift */,
+				230D34971FC9A50600A45525 /* Main.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		230D34A61FC9A95C00A45525 /* SY */ = {
+			isa = PBXGroup;
+			children = (
+				230D34A81FC9AAA000A45525 /* Login.storyboard */,
+				230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */,
+				230D34AC1FC9AABC00A45525 /* SignupViewController.swift */,
+				230D34B21FC9AC8800A45525 /* SettingsViewController.swift */,
+			);
+			path = SY;
+			sourceTree = "<group>";
+		};
+		230D34A71FC9A96700A45525 /* TJ */ = {
+			isa = PBXGroup;
+			children = (
+				230D34AE1FC9ABCF00A45525 /* Main.storyboard */,
+				230D34B01FC9AC7A00A45525 /* MainViewController.swift */,
+			);
+			path = TJ;
+			sourceTree = "<group>";
+		};
+		834BBB1ED9BC0D0A208016FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15462032659811795F13846D /* Pods_ForestClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E44671D49E8EBCAE06DF6DAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */,
+				3C4AF19BB4476295CF315F01 /* Pods-ForestClone.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 230D34A21FC9A50600A45525 /* Build configuration list for PBXNativeTarget "ForestClone" */;
 			buildPhases = (
+				8FB6FA9CFCE10EE3E382AC96 /* [CP] Check Pods Manifest.lock */,
 				230D348C1FC9A50600A45525 /* Sources */,
 				230D348D1FC9A50600A45525 /* Frameworks */,
 				230D348E1FC9A50600A45525 /* Resources */,
+				139679A918F2F6F8B7F5CA78 /* [CP] Embed Pods Frameworks */,
+				FE7DDDE43B2BC354C2CDDA95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230D34A91FC9AAA000A45525 /* Login.storyboard in Resources */,
+				230D34AF1FC9ABCF00A45525 /* Main.storyboard in Resources */,
 				230D349E1FC9A50600A45525 /* LaunchScreen.storyboard in Resources */,
 				230D349B1FC9A50600A45525 /* Assets.xcassets in Resources */,
 				230D34991FC9A50600A45525 /* Main.storyboard in Resources */,
@@ -131,13 +202,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		139679A918F2F6F8B7F5CA78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountdownLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB6FA9CFCE10EE3E382AC96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForestClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7DDDE43B2BC354C2CDDA95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		230D348C1FC9A50600A45525 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				230D34961FC9A50600A45525 /* ViewController.swift in Sources */,
+				230D34AB1FC9AAAD00A45525 /* LoginViewController.swift in Sources */,
+				230D34961FC9A50600A45525 /* SplashViewController.swift in Sources */,
+				230D34AD1FC9AABC00A45525 /* SignupViewController.swift in Sources */,
 				230D34941FC9A50600A45525 /* AppDelegate.swift in Sources */,
+				230D34B11FC9AC7A00A45525 /* MainViewController.swift in Sources */,
+				230D34B31FC9AC8800A45525 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +411,11 @@
 		};
 		230D34A31FC9A50600A45525 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ForestClone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForestClone.ForestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +426,11 @@
 		};
 		230D34A41FC9A50600A45525 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4AF19BB4476295CF315F01 /* Pods-ForestClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ForestClone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForestClone.ForestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";

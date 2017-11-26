@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="SZ3-rE-pMx">
             <objects>
-                <viewController id="x2D-Kr-YZG" sceneMemberID="viewController">
+                <viewController id="x2D-Kr-YZG" customClass="MainViewController" customModule="ForestClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hJc-D9-fC1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,6 +26,9 @@
                                     <constraint firstAttribute="width" secondItem="Su4-Gv-6YI" secondAttribute="height" multiplier="1:1" id="kcT-Xl-7qT"/>
                                 </constraints>
                                 <state key="normal" image="menu"/>
+                                <connections>
+                                    <action selector="menuBtnAction:" destination="x2D-Kr-YZG" eventType="touchUpInside" id="wOr-WG-BGy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxE-VL-e3X" userLabel="Friends">
                                 <rect key="frame" x="19.5" y="183.5" width="29" height="29"/>
@@ -107,6 +110,16 @@
                         <viewLayoutGuide key="safeArea" id="9IR-lO-S6D"/>
                     </view>
                     <navigationItem key="navigationItem" id="dri-pI-gH9"/>
+                    <connections>
+                        <outlet property="friendsBtn" destination="DxE-VL-e3X" id="5MA-w4-ykY"/>
+                        <outlet property="marketBtn" destination="cDX-6I-7SA" id="Weh-f1-FJP"/>
+                        <outlet property="medalBtn" destination="DPo-2i-eVt" id="5Ds-ey-Eg4"/>
+                        <outlet property="menuBtn" destination="Su4-Gv-6YI" id="SCr-hV-TeZ"/>
+                        <outlet property="settingsBtn" destination="iD7-lk-awN" id="fwf-oT-Rb4"/>
+                        <outlet property="sproutsBtn" destination="lYE-m1-eg4" id="atG-h3-Mk9"/>
+                        <outlet property="tagBtn" destination="B9I-7y-ZOI" id="KiA-wS-c7t"/>
+                        <outlet property="treeBtn" destination="Vgh-qu-8j3" id="Wpy-zJ-gm6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aen-e4-Ne5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

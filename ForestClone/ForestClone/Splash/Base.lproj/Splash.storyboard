@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,6 +34,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="logoIMG" destination="51y-nQ-gIT" id="Jwe-HA-ITW"/>
+                        <segue destination="A5p-7x-eZo" kind="show" identifier="segueSplashToLogin" id="LVe-Hu-Clm"/>
+                        <segue destination="RN6-Qb-jXe" kind="show" identifier="segueSplashToMain" id="KPe-YE-osa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +49,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="LoginStoryBoard" storyboardName="Login" id="A5p-7x-eZo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ord-9A-SKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="-92"/>
+            <point key="canvasLocation" x="1146" y="-198"/>
         </scene>
         <!--Main-->
         <scene sceneID="3ha-Ff-bjS">
@@ -52,7 +57,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" id="RN6-Qb-jXe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBL-gu-VcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118" y="163"/>
+            <point key="canvasLocation" x="1123" y="322"/>
         </scene>
     </scenes>
     <resources>

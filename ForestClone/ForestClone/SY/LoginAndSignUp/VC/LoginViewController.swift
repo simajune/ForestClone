@@ -30,10 +30,13 @@ class LoginViewController: UIViewController {
             guard let `self` = self else { return }
             if error == nil, user != nil {
                 let account = Account(email: email, pwd: pwd)
-                if let data = try? JSONEncoder().encode(account) {
+                do{
+                    let data = try JSONEncoder().encode(account)
                     KeychainWrapper.standard.set(data, forKey: userAccount)
+                    self.performSegue(withIdentifier: self.segueLoginToMain, sender: nil)
+                }catch (let error){
+                    print("\(error.localizedDescription)")
                 }
-                self.performSegue(withIdentifier: self.segueLoginToMain, sender: nil)
             }else{
                 UIAlertController.presentAlertController(target: self,
                                                          title: nil,

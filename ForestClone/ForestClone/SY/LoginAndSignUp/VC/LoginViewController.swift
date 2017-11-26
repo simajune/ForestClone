@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     // MARK: IBOulet
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var pwdTF: UITextField!
+    //    @IBOutlet weak var contentView: UIView!
     
     // MARK: IBAction
     // 회원가입 버튼
@@ -49,7 +50,36 @@ class LoginViewController: UIViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTF.delegate = self
+        pwdTF.delegate = self
         
+        // 키보드 올라감
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillshow(_:)), name: .UIKeyboardWillShow, object: nil)
+        // 키보드내려감
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillhide(_:)), name: .UIKeyboardWillHide, object: nil)
     }
 }
 
+extension LoginViewController {
+    // MARK: 키보들 보일때
+    @objc func keyboardWillshow(_ sender: Notification) {
+        self.view.bounds.origin.y = -50
+    }
+    //MARK: 키보드 내릴때
+    @objc func keyboardWillhide(_ sender: Notification) {
+        self.view.bounds.origin.y = 0
+    }
+}
+
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pwdTF.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        pwdTF.clearButtonMode =
+        return true
+    }
+}

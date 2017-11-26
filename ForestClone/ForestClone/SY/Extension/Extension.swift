@@ -4,9 +4,6 @@
 
 import UIKit
 
-extension Notification {
-    
-}
 
 // MARK: UIAlertCotroller
 extension UIAlertController {

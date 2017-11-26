@@ -38,7 +38,7 @@
 		230D349F1FC9A50600A45525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		230D34A81FC9AAA000A45525 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		230D34AA1FC9AAAD00A45525 /* LoginViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
-		230D34AC1FC9AABC00A45525 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		230D34AC1FC9AABC00A45525 /* SignupViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		230D34AE1FC9ABCF00A45525 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		230D34B01FC9AC7A00A45525 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		230D34B21FC9AC8800A45525 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+SignUpView.swift"; sourceTree = "<group>"; };
 		CE0E44BE1FC9D52200ADB58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE8191E81FC9FA6900EA9D84 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CE8191E81FC9FA6900EA9D84 /* Extension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; tabWidth = 4; };
 		CE8191EB1FC9FADA00EA9D84 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		CECD23E71FCAC09E00E840F9 /* LoginNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginNib.xib; sourceTree = "<group>"; };
 		CECD23E91FCAC0EF00E840F9 /* SignUpNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpNib.xib; sourceTree = "<group>"; };
@@ -78,9 +78,9 @@
 				834BBB1ED9BC0D0A208016FA /* Frameworks */,
 				CE5F61281FC9E361009E0E73 /* Recovered References */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 		};
 		230D34911FC9A50600A45525 /* Products */ = {
 			isa = PBXGroup;

@@ -68,6 +68,9 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" red="0.54627877469999997" green="0.79923862219999997" blue="0.057556502519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="IJ7-DP-YPt" kind="show" identifier="segueSignUpToMain" id="KfL-vt-SsX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,6 +109,12 @@
                             <outlet property="newRePwdTF" destination="CWP-F5-VdW" id="b8o-xX-dLp"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="EX9-G0-l2N" id="wSO-Ps-JgG"/>
+                        <outlet property="nickNamdTF" destination="8yB-ab-xkG" id="bkY-0e-DyU"/>
+                        <outlet property="pwdTF" destination="TRF-bS-XlB" id="cxb-8d-gdF"/>
+                        <outlet property="rePwdTF" destination="CWP-F5-VdW" id="mC6-HX-9Tf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WR-rD-k2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +126,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" id="IJ7-DP-YPt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cf7-GT-J5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-850" y="693"/>
+            <point key="canvasLocation" x="-390" y="711"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Eqd-1D-zc9">
@@ -228,4 +237,7 @@
             <point key="canvasLocation" x="-849" y="97"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KfL-vt-SsX"/>
+    </inferredMetricsTieBreakers>
 </document>

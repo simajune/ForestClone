@@ -1,8 +1,12 @@
 
 import UIKit
+import Foundation
+import HGCircularSlider
+import CountdownLabel
 
 class MainViewController: UIViewController {
-
+    //MARK: - Property
+    //나중에 버튼은 태크처리하기
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var treeBtn: UIButton!
     @IBOutlet weak var tagBtn: UIButton!
@@ -11,10 +15,19 @@ class MainViewController: UIViewController {
     @IBOutlet weak var marketBtn: UIButton!
     @IBOutlet weak var sproutsBtn: UIButton!
     @IBOutlet weak var settingsBtn: UIButton!
+    @IBOutlet weak var cashBGView: UIView!
+    @IBOutlet weak var mainCircleSlider: CircularSlider!
+    @IBOutlet weak var countdownLb: CountdownLabel!
+    @IBOutlet weak var plantBtn: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeBtn()
+        mainCircleSlider.addTarget(self, action: #selector(textUpdate), for: .valueChanged)
+    }
+    
+    private func initializeBtn() {
         menuBtn.isSelected = false
         treeBtn.alpha = 0
         tagBtn.alpha = 0
@@ -23,7 +36,14 @@ class MainViewController: UIViewController {
         marketBtn.alpha = 0
         sproutsBtn.alpha = 0
         settingsBtn.alpha = 0
-        
+        cashBGView.layer.cornerRadius = 11
+        plantBtn.layer.cornerRadius = 5
+        textUpdate()
+    }
+    
+    @objc func textUpdate() {
+        let seconds = Double(mainCircleSlider.endPointValue)
+        countdownLb.setCountDownTime(minutes: seconds)
     }
     
     @IBAction func menuBtnAction(_ sender: UIButton) {

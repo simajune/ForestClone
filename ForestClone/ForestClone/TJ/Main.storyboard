@@ -217,6 +217,9 @@
                                 <state key="normal" title="Plant">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="plantBtnAction:" destination="x2D-Kr-YZG" eventType="touchUpInside" id="Lln-b8-f7J"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549019607843" green="0.63921568627450975" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>

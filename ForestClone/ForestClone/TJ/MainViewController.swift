@@ -38,6 +38,7 @@ class MainViewController: UIViewController {
         settingsBtn.alpha = 0
         cashBGView.layer.cornerRadius = 11
         plantBtn.layer.cornerRadius = 5
+        //최대 2시간
         textUpdate()
     }
     
@@ -51,6 +52,14 @@ class MainViewController: UIViewController {
             buttonHidden()
         }else {
             buttonAppear()
+        }
+    }
+    
+    @IBAction func plantBtnAction(_ sender: UIButton) {
+        countdownLb.start()
+        UIView.animate(withDuration: 0.5) {
+            self.mainCircleSlider.alpha = 0
+            self.plantBtn.alpha = 0
         }
     }
     

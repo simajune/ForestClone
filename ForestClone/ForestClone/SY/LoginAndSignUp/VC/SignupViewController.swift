@@ -3,7 +3,7 @@ import UIKit
 import Firebase
 
 class SignupViewController: UIViewController {
-
+    
     // MARK: IBAction
     @IBAction func signUpBtn(_ sender: UIButton){
         guard let email = emailTF.text, !email.isEmpty else{

@@ -5,8 +5,8 @@
 import UIKit
 
 class LoginAndSignUpView: UIView {
-   
-     // MARK: 버튼
+    
+    // MARK: 버튼
     @IBOutlet weak var signUpBtn: UIButton? // 회원가입페이지로 넘어가는 버튼
     @IBOutlet weak var logInBtn: UIButton? // 로그인 버튼
     @IBOutlet weak var newMemberBtn: UIButton? // 회원가입등록버튼
@@ -21,7 +21,7 @@ class LoginAndSignUpView: UIView {
     
     // MARK: Login + SignUp View Setting
     override func awakeFromNib() {
-
+        
     }
     
     // MARK: Login + SignUp View Setting
@@ -44,12 +44,12 @@ class LoginAndSignUpView: UIView {
 extension UIButton {
     
     func buttonLayer(cornerRadius: CGFloat, borderWidth: CGFloat, borderColor: CGColor) {
-//        let layer = CALayer()
+        //        let layer = CALayer()
         self.layer.cornerRadius = cornerRadius
         self.layer.borderWidth = borderWidth
         self.layer.borderColor = borderColor
-//        self.layoutIfNeeded()
-//        self.layer.addSublayer(layer) // ???
+        //        self.layoutIfNeeded()
+        //        self.layer.addSublayer(layer) // ???
     }
 }
 

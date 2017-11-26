@@ -23,6 +23,8 @@
 		CE0E44BC1FC9D30100ADB58E /* Login+SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */; };
 		CE8191E91FC9FA6900EA9D84 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8191E81FC9FA6900EA9D84 /* Extension.swift */; };
 		CE8191EC1FC9FADA00EA9D84 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8191EB1FC9FADA00EA9D84 /* Users.swift */; };
+		CECD23E81FCAC09E00E840F9 /* LoginNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECD23E71FCAC09E00E840F9 /* LoginNib.xib */; };
+		CECD23EA1FCAC0EF00E840F9 /* SignUpNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECD23E91FCAC0EF00E840F9 /* SignUpNib.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		CE0E44BE1FC9D52200ADB58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8191E81FC9FA6900EA9D84 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CE8191EB1FC9FADA00EA9D84 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		CECD23E71FCAC09E00E840F9 /* LoginNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginNib.xib; sourceTree = "<group>"; };
+		CECD23E91FCAC0EF00E840F9 /* SignUpNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpNib.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				230D34A81FC9AAA000A45525 /* Login.storyboard */,
+				CECD23E91FCAC0EF00E840F9 /* SignUpNib.xib */,
+				CECD23E71FCAC09E00E840F9 /* LoginNib.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 				230D34A91FC9AAA000A45525 /* Login.storyboard in Resources */,
 				230D34AF1FC9ABCF00A45525 /* Main.storyboard in Resources */,
 				230D349E1FC9A50600A45525 /* LaunchScreen.storyboard in Resources */,
+				CECD23E81FCAC09E00E840F9 /* LoginNib.xib in Resources */,
 				230D349B1FC9A50600A45525 /* Assets.xcassets in Resources */,
+				CECD23EA1FCAC0EF00E840F9 /* SignUpNib.xib in Resources */,
 				230D34991FC9A50600A45525 /* Splash.storyboard in Resources */,
 				230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */,
 			);

@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ju4-od-dD1">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ju4-od-dD1">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36n-DB-LjH" userLabel="Content View">
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WR-rD-k2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="96"/>
+            <point key="canvasLocation" x="743.20000000000005" y="95.802098950524751"/>
         </scene>
         <!--Main-->
         <scene sceneID="K2u-HT-1YE">
@@ -126,7 +126,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" id="IJ7-DP-YPt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cf7-GT-J5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-390" y="711"/>
+            <point key="canvasLocation" x="266" y="658"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Eqd-1D-zc9">
@@ -136,7 +136,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Tb-93-ZtN">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tb-93-ZtN">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeh-5w-HQW" userLabel="Content View">
@@ -227,6 +227,7 @@
                             <outlet property="signUpBtn" destination="PjD-XL-1ZA" id="s1Z-bh-TQg"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="ZEu-us-xBq"/>
                     <connections>
                         <outlet property="emailTF" destination="aiL-vb-904" id="cz8-30-aSK"/>
                         <outlet property="pwdTF" destination="RYR-R7-ycV" id="qXO-I0-TmK"/>
@@ -234,10 +235,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3q-m5-DD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849" y="97"/>
+            <point key="canvasLocation" x="-172" y="96.7016491754123"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KfL-vt-SsX"/>
+        <segue reference="JxE-5q-7QG"/>
     </inferredMetricsTieBreakers>
 </document>

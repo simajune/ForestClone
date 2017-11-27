@@ -1,6 +1,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignupViewController: UIViewController {
     
@@ -48,12 +49,15 @@ class SignupViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: pwd, completion: { [weak self] (user, error) in
                 guard let `self` = self else { return }
                 if error == nil, let user = user{
+                    let account = Account(email: email, pwd: pwd)
+                    if let data = try? JSONEncoder().encode(account) {
+                        KeychainWrapper.standard.set(data, forKey: userAccount)
+                    }
                     let profileChangeRequest = user.createProfileChangeRequest()
                     profileChangeRequest.displayName = nickName
-                    profileChangeRequest.commitChanges(completion: nil) // 필요할지..
+                    profileChangeRequest.commitChanges(completion: nil) 
                     
                     let userDictionary : [String: Any] = ["user":["email": user.email,"nickname": nickName]]
-                    // user.displayName하면 안되나?
                     self.reference.child(user.uid).setValue(userDictionary)
                     UIAlertController.presentAlertController(target: self,
                                                              title: "가입축하",
@@ -105,14 +109,8 @@ extension SignupViewController {
     }
     // MARK: 키보드 탭 제스쳐
     @objc func backGroundTapKeyboardHide(_ tap: UITapGestureRecognizer){
-        if emailTF.isFirstResponder {
-            emailTF.resignFirstResponder()
-        }else if pwdTF.isFirstResponder{
-            pwdTF.resignFirstResponder()
-        }else if rePwdTF.isFirstResponder{
-            rePwdTF.resignFirstResponder()
-        }else if nickNamdTF.isFirstResponder{
-            nickNamdTF.resignFirstResponder()
+        for view in view.subviews {
+            view.endEditing(true)
         }
     }
 }
@@ -122,7 +120,10 @@ extension SignupViewController: UITextFieldDelegate {
     
     // done(return)을 누를 경우
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        rePwdTF.resignFirstResponder()
+         rePwdTF.resignFirstResponder()
+//        for view in view.subviews {
+//            view.resignFirstResponder()
+//        }
         return true
     }
 }

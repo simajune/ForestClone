@@ -40,7 +40,10 @@ class LoginViewController: UIViewController {
             }else{
                 UIAlertController.presentAlertController(target: self,
                                                          title: nil,
-                                                         massage: "이메일 또는 비밀번호가 잘못되었습니다.", actionStyle: .default, cancelBtn: false, completion: nil)
+                                                         massage: "이메일 또는 비밀번호가 잘못되었습니다.",
+                                                         actionStyle: .default,
+                                                         cancelBtn: false,
+                                                         completion: nil)
             }
         }
         
@@ -76,10 +79,8 @@ extension LoginViewController {
     
     // MARK: 키보드 탭 제스쳐
     @objc func backGroundTapKeyboardHide(_ tap: UITapGestureRecognizer){
-        if emailTF.isFirstResponder {
-            emailTF.resignFirstResponder()
-        }else if pwdTF.isFirstResponder{
-            pwdTF.resignFirstResponder()
+        for view in view.subviews {
+            view.endEditing(true)
         }
     }
 }
@@ -93,9 +94,4 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
     
-    // ???
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        emailTF.clearButtonMode = .always
-        return true
-    }
 }

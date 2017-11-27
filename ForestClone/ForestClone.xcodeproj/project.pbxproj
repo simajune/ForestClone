@@ -19,6 +19,7 @@
 		230D34B11FC9AC7A00A45525 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34B01FC9AC7A00A45525 /* MainViewController.swift */; };
 		230D34B31FC9AC8800A45525 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D34B21FC9AC8800A45525 /* SettingsViewController.swift */; };
 		230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */; };
+		23B5337F1FCB160A00D9532B /* HGCircularSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B533801FCB160A00D9532B /* HGCircularSlider.framework */; };
 		516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15462032659811795F13846D /* Pods_ForestClone.framework */; };
 		CE0E44BC1FC9D30100ADB58E /* Login+SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */; };
 		CE8191E91FC9FA6900EA9D84 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8191E81FC9FA6900EA9D84 /* Extension.swift */; };
@@ -44,6 +45,9 @@
 		230D34B01FC9AC7A00A45525 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		230D34B21FC9AC8800A45525 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		230D34B41FC9C94D00A45525 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		231DF27C1FCB06BB00E06490 /* CircleSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CircleSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B5337E1FCB15B200D9532B /* HGCircularSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HGCircularSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B533801FCB160A00D9532B /* HGCircularSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HGCircularSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4AF19BB4476295CF315F01 /* Pods-ForestClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.release.xcconfig"; sourceTree = "<group>"; };
 		8839F1D5924991F4F870D118 /* Pods-ForestClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForestClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForestClone/Pods-ForestClone.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+SignUpView.swift"; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B5337F1FCB160A00D9532B /* HGCircularSlider.framework in Frameworks */,
 				516C9275B00746C1E6813838 /* Pods_ForestClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +83,7 @@
 				230D34911FC9A50600A45525 /* Products */,
 				E44671D49E8EBCAE06DF6DAF /* Pods */,
 				834BBB1ED9BC0D0A208016FA /* Frameworks */,
-				CE5F61281FC9E361009E0E73 /* Recovered References */,
+				23869A311FC9E2240058FF7F /* Recovered References */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -131,20 +136,23 @@
 			path = TJ;
 			sourceTree = "<group>";
 		};
-		834BBB1ED9BC0D0A208016FA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				15462032659811795F13846D /* Pods_ForestClone.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE5F61281FC9E361009E0E73 /* Recovered References */ = {
+		23869A311FC9E2240058FF7F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				230D349A1FC9A50600A45525 /* Assets.xcassets */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		834BBB1ED9BC0D0A208016FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23B533801FCB160A00D9532B /* HGCircularSlider.framework */,
+				23B5337E1FCB15B200D9532B /* HGCircularSlider.framework */,
+				231DF27C1FCB06BB00E06490 /* CircleSlider.framework */,
+				15462032659811795F13846D /* Pods_ForestClone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE8191E31FC9F94700EA9D84 /* LoginAndSignUp */ = {
@@ -322,6 +330,7 @@
 				"${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HGCircularSlider/HGCircularSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -331,6 +340,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountdownLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HGCircularSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -532,7 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForestClone.ForestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -547,7 +557,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForestClone.ForestClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

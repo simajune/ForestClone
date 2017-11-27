@@ -7,43 +7,43 @@ class SignupViewController: UIViewController {
     // MARK: IBAction
     @IBAction func signUpBtn(_ sender: UIButton){
         guard let email = emailTF.text, !email.isEmpty else{
-            UIAlertController.showAlertController(title: "이메일을 입력해주세요",
-                                                  massage: nil,
-                                                  actionStyle:.default,
-                                                  cancelBtn: false,
-                                                  completion: nil)
+            UIAlertController.presentAlertController(target: self,
+                                                     title: "이메일을 입력해주세요,",
+                                                     massage: nil,
+                                                     cancelBtn: false,
+                                                     completion: nil)
             return
         }
         guard let pwd = pwdTF.text, !pwd.isEmpty else{
-            UIAlertController.showAlertController(title: "비밀번호를 입력해주세요",
-                                                  massage: nil,
-                                                  actionStyle:.default,
-                                                  cancelBtn: false,
-                                                  completion: nil)
+            UIAlertController.presentAlertController(target: self,
+                                                     title: "비밀번호를 입력해주세요.",
+                                                     massage: nil,
+                                                     cancelBtn: false,
+                                                     completion: nil)
             return
         }
         guard let rePwd = rePwdTF.text, !rePwd.isEmpty else{
-            UIAlertController.showAlertController(title: "비밀번호를 다시 입력해주세요",
-                                                  massage: nil,
-                                                  actionStyle:.default,
-                                                  cancelBtn: false,
-                                                  completion: nil)
+            UIAlertController.presentAlertController(target: self,
+                                                     title: "비밀번호를 다시 입력해주세요.",
+                                                     massage: nil,
+                                                     cancelBtn: false,
+                                                     completion: nil)
             return
         }
         guard let nickName = nickNamdTF.text, !nickName.isEmpty else{
-            UIAlertController.showAlertController(title: "닉네임을 입력해주세요",
-                                                  massage: nil,
-                                                  actionStyle:.default,
-                                                  cancelBtn: false,
-                                                  completion: nil)
+            UIAlertController.presentAlertController(target: self,
+                                                     title: "닉네임을 입력해주세요.",
+                                                     massage: nil,
+                                                     cancelBtn: false,
+                                                     completion: nil)
             return
         }
         if pwd != rePwd {
-            UIAlertController.showAlertController(title: "비밀번호가 달라요",
-                                                  massage: nil,
-                                                  actionStyle: .default,
-                                                  cancelBtn: false,
-                                                  completion: nil)
+            UIAlertController.presentAlertController(target: self,
+                                                     title: "비밀번호가 다릅니다.",
+                                                     massage: nil,
+                                                     cancelBtn: false,
+                                                     completion: nil)
         }else{
             Auth.auth().createUser(withEmail: email, password: pwd, completion: { [weak self] (user, error) in
                 guard let `self` = self else { return }
@@ -55,8 +55,13 @@ class SignupViewController: UIViewController {
                     let userDictionary : [String: Any] = ["user":["email": user.email,"nickname": nickName]]
                     // user.displayName하면 안되나?
                     self.reference.child(user.uid).setValue(userDictionary)
-                    UIAlertController.showAlertController(title: "가입축하", massage: "가입을 축하드립니다.", actionStyle: .default, cancelBtn: false, completion: { _ in
-                        self.performSegue(withIdentifier: self.segueSignUpToMain, sender: nil)
+                    UIAlertController.presentAlertController(target: self,
+                                                             title: "가입축하",
+                                                             massage: "가입을 축하드립니다.",
+                                                             actionStyle: .default,
+                                                             cancelBtn: false,
+                                                             completion: { _ in
+                                                                self.performSegue(withIdentifier: self.segueSignUpToMain, sender: nil)
                     })
                 }
             })
@@ -72,9 +77,53 @@ class SignupViewController: UIViewController {
     // MARK: Property
     lazy var reference = Database.database().reference()
     let segueSignUpToMain = "segueSignUpToMain"
+    
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 키보드 올리기
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillshow(_:)), name: .UIKeyboardWillShow, object: nil)
+        
+        // 키보드 내리기
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillhide(_:)), name: .UIKeyboardWillHide, object: nil)
+        
+        // 탭했을 경우 키보드 내리기
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(backGroundTapKeyboardHide(_:))))
+    }
+    
+}
+// MARK: extension LoginViewController
+extension SignupViewController {
+    // MARK: 키보들 보일때
+    @objc func keyboardWillshow(_ sender: Notification) {
+        self.view.bounds.origin.y = -80
+    }
+    //MARK: 키보드 내릴때
+    @objc func keyboardWillhide(_ sender: Notification) {
+        self.view.bounds.origin.y = 0
+    }
+    // MARK: 키보드 탭 제스쳐
+    @objc func backGroundTapKeyboardHide(_ tap: UITapGestureRecognizer){
+        if emailTF.isFirstResponder {
+            emailTF.resignFirstResponder()
+        }else if pwdTF.isFirstResponder{
+            pwdTF.resignFirstResponder()
+        }else if rePwdTF.isFirstResponder{
+            rePwdTF.resignFirstResponder()
+        }else if nickNamdTF.isFirstResponder{
+            nickNamdTF.resignFirstResponder()
+        }
     }
 }
+
+// MARK: UITextFieldDelegate
+extension SignupViewController: UITextFieldDelegate {
+    
+    // done(return)을 누를 경우
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        rePwdTF.resignFirstResponder()
+        return true
+    }
+}
+

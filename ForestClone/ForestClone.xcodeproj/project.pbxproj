@@ -23,6 +23,7 @@
 		CE0E44BC1FC9D30100ADB58E /* Login+SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E44BB1FC9D30100ADB58E /* Login+SignUpView.swift */; };
 		CE8191E91FC9FA6900EA9D84 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8191E81FC9FA6900EA9D84 /* Extension.swift */; };
 		CE8191EC1FC9FADA00EA9D84 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8191EB1FC9FADA00EA9D84 /* Users.swift */; };
+		CE95D55C1FCB4E8F0045C886 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95D55B1FCB4E8F0045C886 /* Setting.storyboard */; };
 		CECD23E81FCAC09E00E840F9 /* LoginNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECD23E71FCAC09E00E840F9 /* LoginNib.xib */; };
 		CECD23EA1FCAC0EF00E840F9 /* SignUpNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECD23E91FCAC0EF00E840F9 /* SignUpNib.xib */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		CE0E44BE1FC9D52200ADB58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8191E81FC9FA6900EA9D84 /* Extension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; tabWidth = 4; };
 		CE8191EB1FC9FADA00EA9D84 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		CE95D55B1FCB4E8F0045C886 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		CECD23E71FCAC09E00E840F9 /* LoginNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginNib.xib; sourceTree = "<group>"; };
 		CECD23E91FCAC0EF00E840F9 /* SignUpNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpNib.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,8 +115,8 @@
 		230D34A61FC9A95C00A45525 /* SY */ = {
 			isa = PBXGroup;
 			children = (
+				CE95D55D1FCB4E9E0045C886 /* Setting */,
 				CE8191E71FC9FA5100EA9D84 /* Extension */,
-				230D34B21FC9AC8800A45525 /* SettingsViewController.swift */,
 				CE8191E31FC9F94700EA9D84 /* LoginAndSignUp */,
 			);
 			path = SY;
@@ -199,6 +201,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CE95D55D1FCB4E9E0045C886 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CE95D55F1FCB4EBA0045C886 /* VC */,
+				CE95D55E1FCB4EAC0045C886 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CE95D55E1FCB4EAC0045C886 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE95D55B1FCB4E8F0045C886 /* Setting.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE95D55F1FCB4EBA0045C886 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				230D34B21FC9AC8800A45525 /* SettingsViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		E44671D49E8EBCAE06DF6DAF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +302,7 @@
 				230D349E1FC9A50600A45525 /* LaunchScreen.storyboard in Resources */,
 				CECD23E81FCAC09E00E840F9 /* LoginNib.xib in Resources */,
 				230D349B1FC9A50600A45525 /* Assets.xcassets in Resources */,
+				CE95D55C1FCB4E8F0045C886 /* Setting.storyboard in Resources */,
 				CECD23EA1FCAC0EF00E840F9 /* SignUpNib.xib in Resources */,
 				230D34991FC9A50600A45525 /* Splash.storyboard in Resources */,
 				230D34B51FC9C94D00A45525 /* GoogleService-Info.plist in Resources */,

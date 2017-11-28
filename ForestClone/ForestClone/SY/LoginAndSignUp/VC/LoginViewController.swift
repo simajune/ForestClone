@@ -92,10 +92,4 @@ extension LoginViewController: UITextFieldDelegate {
         pwdTF.resignFirstResponder()
         return true
     }
-    
-    // ???
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        emailTF.clearButtonMode = .always
-        return true
-    }
 }
